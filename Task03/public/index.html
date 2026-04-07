@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Наибольший общий делитель</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1 class="title">Наибольший общий делитель</h1>
+        <div class="subtitle">Task03</div>
+      </div>
+      <nav class="nav">
+        <button id="tabPlay" class="btn btn-secondary" type="button">Играть</button>
+        <button id="tabHistory" class="btn btn-secondary" type="button">История</button>
+      </nav>
+    </header>
+
+    <section id="play" class="card">
+      <div class="row">
+        <div class="field">
+          <label for="playerName">Имя игрока</label>
+          <input id="playerName" class="input" type="text" placeholder="Введите имя" />
+        </div>
+        <button id="startGame" class="btn" type="button">Начать</button>
+      </div>
+
+      <hr class="sep" />
+
+      <div id="gameArea" class="hidden">
+        <p class="muted">Найдите НОД чисел:</p>
+        <p class="nums"><span id="a"></span> и <span id="b"></span></p>
+
+        <div class="row">
+          <div class="field">
+            <label for="answer">Ваш ответ</label>
+            <input id="answer" class="input" type="number" inputmode="numeric" />
+          </div>
+          <button id="sendStep" class="btn" type="button">Ответить</button>
+        </div>
+
+        <p id="result" class="result"></p>
+      </div>
+    </section>
+
+    <section id="history" class="card hidden">
+      <h2 class="h2">Прошлые игры</h2>
+      <div id="games"></div>
+
+      <hr class="sep" />
+
+      <h2 class="h2">Ходы выбранной игры</h2>
+      <div id="steps"></div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "name": "nevall-von-goodem/task03",
+    "description": "Task03 — Slim REST API + SPA for GCD game",
+    "type": "project",
+    "require": {
+      "php": ">=8.0",
+      "slim/slim": "^4.0",
+      "slim/psr7": "^1.0"
+    },
+      "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "autoload": {
+      "files": [
+        "src/Db.php",
+        "src/Gcd.php"
+      ],
+      "psr-4": {
+          "NevallVonGoodem\\Gcd\\": "src/"
+      }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "scripts": {
+      "start": "php -S localhost:3000 -t public public/index.php"
+    },
+    "authors": [
+      {
+          "name": "Nevall von Goodem",
+          "email": "sokoloff.roman.ru@mail.ru"
+      }
+    ]
+}
